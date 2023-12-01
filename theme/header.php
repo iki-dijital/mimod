@@ -12,7 +12,7 @@ include "components/svg-sprite.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Starter kit for people">
-    <title>TMMOB Mimarlar Odası Konya Şubesi</title>
+    <title>Starter Kit</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
