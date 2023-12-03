@@ -3,10 +3,14 @@
 @use 'sass:map';
 
 @mixin mask-parameters($size: contain, $position: center, $repeat: no-repeat, $image: null) {
+  -webkit-mask-size: $size;
   mask-size: $size;
+  -webkit-mask-repeat: $repeat;
   mask-repeat: $repeat;
+  -webkit-mask-position: $position;
   mask-position: $position;
   @if ($image) {
+    -webkit-mask-image: url($image);
     mask-image: url($image);
   }
 }

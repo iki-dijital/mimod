@@ -1,5 +1,7 @@
 body {
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  font-family: 'Montserrat', sans-serif;
   &.show{
     overflow: hidden;
   }

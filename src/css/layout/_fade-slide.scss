@@ -24,6 +24,7 @@
       pointer-events: auto;
       user-select: auto;
       opacity: 1;
+      position: relative;
     }
     @for $i from 1 through 100 {
       &:nth-child(#{$i}) {

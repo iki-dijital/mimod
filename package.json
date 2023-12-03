@@ -17,6 +17,7 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.16",
     "concurrently": "^8.2.2",
+    "critical": "^6.0.4",
     "cssnano": "^6.0.1",
     "cssnano-preset-advanced": "^6.0.1",
     "lightningcss-cli": "^1.22.1",

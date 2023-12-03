@@ -1,0 +1,29 @@
+.btn {
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 2px;
+  line-height: 1;
+}
+
+.quicklink {
+  &::before {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    background-color: get-color(dark);
+    transition: .3s width;
+  }
+  .icon{
+    flex: 1;
+  }
+  .text{
+    flex: 3;
+  }
+  &:hover{
+    &::before{
+      width: 100%;
+    }
+  }
+}

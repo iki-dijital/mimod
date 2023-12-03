@@ -18,6 +18,20 @@
   direction: ltr;
 }
 
+#home-papers-blaze{
+  .blaze-slider{
+    --slides-to-show: 4.9;
+    --slide-gap: 24px;
+  }
+}
+
+#home-events-blaze{
+  .blaze-slider{
+    --slides-to-show: 7.5 ;
+    --slide-gap: 24px;
+  }
+}
+
 .blaze-container {
   position: relative
 }

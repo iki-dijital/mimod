@@ -9,8 +9,8 @@
 @import 'abstracts/placeholders';
 
 /*! purgecss start ignore */
-// @import 'vendors/blaze-slider';
-// @import 'vendors/bootstrap';
+@import 'vendors/blaze-slider';
+@import 'vendors/bootstrap';
 // @import 'vendors/photoswipe';
 // @import 'vendors/swiper';
 // @import 'vendors/glightbox';
@@ -26,6 +26,9 @@
 
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/fade-slide';
+
+@import 'components/buttons';
 
 @import 'pages/index';
 
