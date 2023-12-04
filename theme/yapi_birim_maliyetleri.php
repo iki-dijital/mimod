@@ -30,7 +30,7 @@ include "header.php"; ?>
                         ];
                         for ($i = 1; $i <= 6; $i++): ?>
                             <a href=""
-                                class="download_component block mb-6 bg-white flex items-center justify-between min-h-20 pl-3 transition-shadow transition-300">
+                                class="download_component mb-6 bg-white flex items-center justify-between min-h-20 pl-3 transition-shadow transition-300">
                                 <span
                                     class="py-3 text-sm leadig-tight text-secondary"><?= $yapi_birim_title_list[$i - 1] ?></span>
                                 <img src="<?= domain ?>assets/img/svg/delete_file_pdf.svg" alt="PDF"

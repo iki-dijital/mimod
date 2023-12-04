@@ -27,8 +27,9 @@ include "components/svg-sprite.php";
 <body class="bg-light">
     <div id="search_overlay"
         class="absolute top-0 left-0 w-full h-2/7 z-6 bg-light flex justify-center items-center transition-400 transition-transform">
-        <svg class="absolute top-5 right-5 cursor-pointer transition-300 transition-colors" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"
-            stroke="currentColor" stroke-width="1.5" id="close_search" viewBox="0 0 24 24">
+        <svg class="absolute top-5 right-5 cursor-pointer transition-300 transition-colors"
+            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="currentColor"
+            stroke-width="1.5" id="close_search" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
         <div class="container">
@@ -51,7 +52,8 @@ include "components/svg-sprite.php";
         </div>
     </div>
     <div id="search_overlay_backdrop"
-        class="absolute top-0 left-0 w-screen h-screen z-5 bg-black opacity-0 pointer-events-none select-none transition-400 transition-opacity"></div>
+        class="absolute top-0 left-0 w-screen h-screen z-5 bg-black opacity-0 pointer-events-none select-none transition-400 transition-opacity">
+    </div>
     <header class="header_lg block md:hidden bg-white pt-11 relative z-3">
         <div class="container">
             <div class="row">

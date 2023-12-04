@@ -1,13 +1,13 @@
 <?php
-$js_file = 'belgeler';
+$js_file = 'raporlar';
 include "header.php"; ?>
 <section id="page-banner" class="bg-primary mb-7.5">
     <div class="container h-full flex flex-col justify-center">
-        <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">Mesleki Denetim</h1>
+        <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">Yayınlar</h1>
         <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6" aria-label="Sayfa haritası">
             <a href="" class="text-light leading-tight relative transition-colors transition-300">Anasayfa</a>
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">Mesleki Denetim</a>
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">Belgeler</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Yayınlar</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Raporlar</a>
         </nav>
     </div>
 </section>
@@ -16,16 +16,13 @@ include "header.php"; ?>
         <div class="row">
             <div class="col-lg-9">
                 <div class="content-wrapper">
-                    <h2>Belgeler</h2>
+                    <h2>Raporlar</h2>
                     <div class="mt-8.5">
-                        <?php
-                        $belgeler_title_list = ["Yapı Tanıtım Belgesi", "TUS Sözleşme Örneği", "Sicil Durum Belgesi Başvuru FOrmu Ücretli Çalışan İçin", "Sicil Durum Belgesi Başvuru Formu Kendine Özel Proje Çalışması", "Gazete İlan Örnek", "Mimari Proje Kontrol Formu", "Sicil Durum Belgesi Başvuru Formu Kamu Personeli İçin"];
-                        for ($i = 1; $i <= 7; $i++): ?>
+                        <?php for ($i = 1; $i <= 4; $i++): ?>
                             <a href=""
                                 class="download_component mb-6 bg-white flex items-center justify-between min-h-20 pl-3 transition-shadow transition-300">
-                                <span
-                                    class="py-3 text-sm leadig-tight text-secondary"><?= $belgeler_title_list[$i - 1] ?></span>
-                                <img src="<?= domain ?>assets/img/svg/delete_download_icon.svg" alt="PDF"
+                                <span class="py-3 text-sm leadig-tight text-secondary">16. Dönem Çalışma Raporu</span>
+                                <img src="<?= domain ?>assets/img/svg/delete_file_pdf.svg" alt="PDF"
                                     class="h-20 aspect-square object-contain object-center">
                             </a>
                         <?php endfor; ?>

@@ -161,8 +161,8 @@ include "header.php";
                                 <div class="blaze-track">
                                     <?php for ($i = 1; $i <= 10; $i++): ?>
                                         <div>
-                                            <a href="" class="block p-4 bg-white">
-                                                <div class="img border border-solid border-dark pt-4 pb-5 px-12">
+                                            <a href="" class="mimaran_cover block p-4 bg-white transition-300 transition-shadow">
+                                                <div class="img border border-solid border-dark pt-4 pb-5 px-12 flex flex-col justify-end">
                                                     <!-- Alt etiketi güncelle -->
                                                     <img src="<?= domain ?>assets/img/delete_mimaran_<?= $i % 5 + 1 ?>.webp"
                                                         alt="Mimaran 13.sayı"
