@@ -1,0 +1,28 @@
+#templateAccordion {
+  .accordion-header {
+    margin-bottom: 0;
+  }
+  .accordion-body{
+     padding-bottom: 18px;
+  }
+  .accordion-button {
+    &::before {
+      content: '+';
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      transform: translateY(-50%) rotate(45deg);
+      color: get-color(light);
+      transition: 0.3s transform, 0.3s color;
+      @include get_font(600, 30px, 1);
+    }
+    &.collapsed {
+      &::before {
+        transform: translateY(-50%);
+      }
+    }
+    &::after {
+      content: unset;
+    }
+  }
+}

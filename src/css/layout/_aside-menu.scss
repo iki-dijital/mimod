@@ -1,0 +1,36 @@
+aside{
+    position: sticky;
+    top: 15px;
+}
+
+.aside-list {
+  span {
+    min-height: 50px;
+  }
+  li {
+    &:not(:last-of-type) {
+      a {
+        border-bottom: 1px solid get-color(light);
+      }
+    }
+  }
+  a {
+    &::before {
+      top: 17px;
+      left: -3px;
+      width: 5px;
+      transition: 0.3s opacity, 0.3s left;
+      height: 8px;
+      opacity: 0;
+      @include background($image: '../img/svg/triangle_bullet.svg');
+    }
+
+    &:hover,
+    &.active {
+      &::before {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+}

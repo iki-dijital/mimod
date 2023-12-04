@@ -1,0 +1,19 @@
+#page-banner {
+  height: 200px;
+}
+#banner-breadcrumb {
+  a {
+    &:not(:first-of-type):before {
+      content: '/';
+      position: absolute;
+      left: -15px;
+      top: 3px;
+      color: #fff;
+      font-size: 16px;
+      line-height: 1;
+    }
+    &:hover {
+      color: get-color(secondary);
+    }
+  }
+}

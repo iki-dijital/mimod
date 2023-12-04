@@ -20,6 +20,20 @@ $nav-link-hover-color: #fff;
 $nav-tabs-link-active-bg: #fff;
 $nav-tabs-link-active-color: get-color(secondary);
 
+
+$accordion-border-color: unset;
+$accordion-border-width: 0;
+$accordion-button-color: get-color(light);
+$accordion-button-active-color: get-color(light);
+$accordion-button-bg: get-color(primary);
+$accordion-button-active-bg: get-color(primary);
+$accordion-button-padding-x: 20px;
+$accordion-button-padding-y: 0;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: unset;
+$accordion-body-padding-y: 24px;
+$accordion-body-padding-x: 0;
+
 // Layout & components
 // @import '../../../node_modules/bootstrap/scss/root';
 // @import '../../../node_modules/bootstrap/scss/reboot';
@@ -30,13 +44,13 @@ $nav-tabs-link-active-color: get-color(secondary);
 // @import '../../../node_modules/bootstrap/scss/tables';
 // @import '../../../node_modules/bootstrap/scss/forms';
 // @import '../../../node_modules/bootstrap/scss/buttons';
-// @import '../../../node_modules/bootstrap/scss/transitions';
+@import '../../../node_modules/bootstrap/scss/transitions';
 // @import '../../../node_modules/bootstrap/scss/dropdown';
 // @import '../../../node_modules/bootstrap/scss/button-group';
 @import '../../../node_modules/bootstrap/scss/nav';
 // @import '../../../node_modules/bootstrap/scss/navbar';
 // @import '../../../node_modules/bootstrap/scss/card';
-// @import '../../../node_modules/bootstrap/scss/accordion';
+@import '../../../node_modules/bootstrap/scss/accordion';
 // @import '../../../node_modules/bootstrap/scss/breadcrumb';
 // @import '../../../node_modules/bootstrap/scss/pagination';
 // @import '../../../node_modules/bootstrap/scss/badge';

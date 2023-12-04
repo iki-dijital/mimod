@@ -237,7 +237,7 @@ include "header.php";
     <section id="home-library" class="bg-cover bg-no-repeat bg-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 relative z-3">
                     <form action="">
                         <div class="flex items-center h-15">
                             <label for="name" class="flex-1 h-full">
