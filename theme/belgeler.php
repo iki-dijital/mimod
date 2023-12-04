@@ -5,9 +5,9 @@ include "header.php"; ?>
     <div class="container h-full flex flex-col justify-center">
         <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">Mesleki Denetim</h1>
         <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6" aria-label="Sayfa haritası">
-            <a href="" class="text-white leading-tight relative transition-colors transition-300">Anasayfa</a>
-            <a href="" class="text-white leading-tight relative transition-colors transition-300">Mesleki Denetim</a>
-            <a href="" class="text-white leading-tight relative transition-colors transition-300">Belgeler</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Anasayfa</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Mesleki Denetim</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Belgeler</a>
         </nav>
     </div>
 </section>

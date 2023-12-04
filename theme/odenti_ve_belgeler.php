@@ -1,14 +1,13 @@
 <?php
-$js_file = 'sube_yonetim_kurulu';
+$js_file = 'odenti_ve_belgeler';
 include "header.php"; ?>
 <section id="page-banner" class="bg-primary mb-7.5">
     <div class="container h-full flex flex-col justify-center">
-        <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">Hakkımızda</h1>
+        <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">Üyelik</h1>
         <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6" aria-label="Sayfa haritası">
             <a href="" class="text-light leading-tight relative transition-colors transition-300">Anasayfa</a>
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">Hakkımızda</a>
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">Şube Yönetim
-                Kurulu</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Üyelik</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Ödenti ve Belgeler</a>
         </nav>
     </div>
 </section>
@@ -17,92 +16,76 @@ include "header.php"; ?>
         <div class="row">
             <div class="col-lg-9">
                 <div class="content-wrapper">
-                    <h2>Şube Yönetim Kurulu</h2>
-                    <p>
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-                        Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
-                        words, consectetur.
-                    </p>
-                    <div
-                        class="open-accordion-title bg-primary text-light font-semibold min-h-15 py-3 flex items-center pl-5 text-xl leading-normal">
-                        18. Dönem Yönetim Kurulu</div>
-                    <div class="open-accordion-content pt-6 pb-7.5">
-                        <div class="row">
-                            <?php for ($i = 1; $i <= 13; $i++): ?>
-                                <div class="col-lg-3 <?= $i == 1 ? 'first-member' : '' ?>">
-                                    <div class="board-member mb-7.5">
-                                        <div class="img mb-3">
-                                            <img src="<?= domain ?>assets/img/svg/member_<?= rand(1, 2) % 2 == 0 ? 'male' : 'female' ?>.svg"
-                                                alt="Üye görseli" class="block w-full h-full object-contain object-bottom" loading="lazy">
-                                        </div>
-                                        <div class="info">
-                                            <h3 class="text-secondary font-medium text-base leading-tight mt-0 mb-0.5">İsim
-                                                Soyisim</h3>
-                                            <span class="text-dark text-sm leading-tight"><?=$i == 1 ? 'Başkan' : 'Yönetim Kurulu Üyesi' ?></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php endfor; ?>
-                        </div>
-                    </div>
-                    <div class="accordion" id="templateAccordion">
-                        <?php for ($i = 1; $i < 18; $i++): ?>
-                            <div class="accordion-item mb-3">
-                                <h2 class="accordion-header my-0">
-                                    <button
-                                        class="accordion-button min-h-15 py-3 text-xl leading-normal font-semibold cursor-pointer collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<?= $i ?>"
-                                        aria-expanded="false"
-                                        aria-controls="collapse-<?= $i ?>">
-                                        <?= 18 - $i ?>. Dönem Yönetim Kurulu
-                                    </button>
-                                </h2>
-                                <div id="collapse-<?= $i ?>"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#templateAccordion">
-                                    <div class="accordion-body">
-                                        <div class="row">
-                                            <?php for ($j = 1; $j <= 13; $j++): ?>
-                                                <div class="col-lg-3 <?= $j == 1 ? 'first-member' : '' ?>">
-                                                    <div class="board-member mb-7.5">
-                                                        <div class="img mb-3">
-                                                            <img src="<?= domain ?>assets/img/svg/member_<?= rand(1, 2) % 2 == 0 ? 'male' : 'female' ?>.svg"
-                                                                alt="Üye görseli"
-                                                                class="block w-full h-full object-contain object-bottom" loading="lazy">
-                                                        </div>
-                                                        <div class="info">
-                                                            <h3
-                                                                class="text-secondary font-medium text-base leading-tight mt-0 mb-0.5">
-                                                                İsim
-                                                                Soyisim</h3>
-                                                            <span class="text-dark text-sm leading-tight"><?=$j == 1 ? 'Başkan' : 'Yönetim Kurulu Üyesi'?></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endfor; ?>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endfor; ?>
-                    </div>
+                    <h2>Ödenti ve Belgeler</h2>
+                    <?php for ($i = 1; $i <= 3; $i++): ?>
+                        <h3>Yeni Kayıt İçin Gerekli Evraklar</h3>
+                        <p>
+                            <strong>
+                                1) Türkiye Cumhuriyeti’nde bulunan Üniversitelerin Mimarlık ve Endüstri Ürünleri Tasarımı
+                                Bölümlerinden mezun olanların Üye kayıt başvurularında;
+                            </strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    3 Adet Vesikalık Fotoğraf
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Diploma aslı bulundurmak kaydı ile 2 Adet noter tasdikli diploma fotokopisi ya da mezun
+                                    oldukları okuldan alınan “Aslı Gibidir” onaylı 2 adet ıslak imzalı ‘Geçici Mezuniyet
+                                    Belgesi’ (e-devletten alınan belge kabul edilmemektedir!)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Nüfus Cüzdanı Aslı ve 2 Adet Fotokopisi
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    İkametgah
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Mezuniyet Tarihi İtibariyle Aidat (son beş yıl x 960 TL.) (5 yıldan önceki borçlar
+                                    ilgili yılın aidat miktarı üzerinden hesaplanır)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Kayıt ücreti: 2023 yılı için : 200 TL.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    (Yönetmelik gereği sadece ilk kayıt işlemine esas olmak üzere mezuniyet tarihi ile Odaya
+                                    kayıt olunan tarih arasında mimarlık mesleğini yapmadığını belgelediği takdirde
+                                    aidatları düşülmektedir. Bu düşümler mezunların E-Devlet üzerinden SGK sistemindeki
+                                    verileri esas alınarak hesaplandığından, başvuru esnasında E-DEVLET’ten alınan 4A
+                                    DETAYLI HİZMET DÖKÜMÜ’ne sahip olunması gerekmektedir.)
+                                </p>
+                            </li>
+                        </ul>
+                    <?php endfor; ?>
                 </div>
             </div>
             <div class="col-lg-3">
-                <aside class="p-2 bg-white top-0">
+                <aside class="p-2 bg-white">
                     <div class="aside-list">
                         <span
-                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3 py-2.5">HAKKIMIZDA</span>
+                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3">HAKKIMIZDA</span>
                         <ul>
                             <li>
                                 <a href=""
-                                    class="text-sm relative before-absolute pb-2.5 pt-3 pl-3 text-secondary block">Kuruluş
+                                    class="active text-sm relative before-absolute pb-2.5 pt-3 pl-3 text-secondary block">Kuruluş
                                     ve Amaç</a>
                             </li>
                             <li>
                                 <a href=""
-                                    class="active text-sm relative before-absolute pb-2.5 pt-3 pl-3 text-secondary block">Şube
+                                    class="text-sm relative before-absolute pb-2.5 pt-3 pl-3 text-secondary block">Şube
                                     Yönetim Kurulu</a>
                             </li>
                             <li>
@@ -118,7 +101,7 @@ include "header.php"; ?>
                     </div>
                     <div class="aside-list">
                         <span
-                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3 py-2.5">ORGANLAR</span>
+                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3">ORGANLAR</span>
                         <ul>
                             <li>
                                 <a href=""
@@ -144,7 +127,7 @@ include "header.php"; ?>
                     </div>
                     <div class="aside-list">
                         <span
-                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3 py-2.5">MESLEKİ
+                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3">MESLEKİ
                             DENETİM</span>
                         <ul>
                             <li>
@@ -170,7 +153,7 @@ include "header.php"; ?>
                     </div>
                     <div class="aside-list">
                         <span
-                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3 py-2.5">ÜYELİK</span>
+                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3">ÜYELİK</span>
                         <ul>
                             <li>
                                 <a href=""
@@ -196,7 +179,7 @@ include "header.php"; ?>
                     </div>
                     <div class="aside-list">
                         <span
-                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3 py-2.5">YAYINLAR</span>
+                            class="bg-light text-xl flex items-center leading-tight font-bold text-secondary pl-3">YAYINLAR</span>
                         <ul>
                             <li>
                                 <a href=""

@@ -5,9 +5,9 @@ include "header.php"; ?>
     <div class="container h-full flex flex-col justify-center">
         <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">Organlar</h1>
         <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6" aria-label="Sayfa haritası">
-            <a href="" class="text-white leading-tight relative transition-colors transition-300">Anasayfa</a>
-            <a href="" class="text-white leading-tight relative transition-colors transition-300">Organlar</a>
-            <a href="" class="text-white leading-tight relative transition-colors transition-300">Oda Genel Kurul
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Anasayfa</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Organlar</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Oda Genel Kurul
                 Delegeleri</a>
         </nav>
     </div>
@@ -21,7 +21,7 @@ include "header.php"; ?>
                     <div class="delegates-table flex gap-x-7">
                         <div class="flex-1">
                             <div
-                                class="delegates-list-heading min-h-15 py-2.5 px-5 bg-primary text-white font-semibold text-xl leading-tight mb-0.5 flex items-center">
+                                class="delegates-list-heading min-h-15 py-2.5 px-5 bg-primary text-light font-semibold text-xl leading-tight mb-0.5 flex items-center">
                                 18. Dönem Şube Asıl Delegeleri
                             </div>
                             <div>
@@ -34,7 +34,7 @@ include "header.php"; ?>
                         </div>
                         <div class="flex-1">
                             <div
-                                class="delegates-list-heading min-h-15 py-2.5 px-5 bg-primary text-white font-semibold text-xl leading-tight mb-0.5 flex items-center">
+                                class="delegates-list-heading min-h-15 py-2.5 px-5 bg-primary text-light font-semibold text-xl leading-tight mb-0.5 flex items-center">
                                 18. Dönem Şube Yedek Delegeleri
                             </div>
                             <div>

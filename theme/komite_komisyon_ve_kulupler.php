@@ -5,9 +5,9 @@ include "header.php"; ?>
     <div class="container h-full flex flex-col justify-center">
         <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">Organlar</h1>
         <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6" aria-label="Sayfa haritası">
-            <a href="" class="text-white leading-tight relative transition-colors transition-300">Anasayfa</a>
-            <a href="" class="text-white leading-tight relative transition-colors transition-300">Organlar</a>
-            <a href="" class="text-white leading-tight relative transition-colors transition-300">Komite, Komisyon ve
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Anasayfa</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Organlar</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Komite, Komisyon ve
                 Kulüpler</a>
         </nav>
     </div>
@@ -22,11 +22,11 @@ include "header.php"; ?>
                         <span class="text-secondary text-xl font-bold leading-tight">Komite, Komisyon ve Kulüp Başvuru
                             Formu için Tıklayınız.</span>
                         <a href=""
-                            class="flex items-center bg-primary text-white text-sm text-white font-semibold leading-none min-h-15 px-11 py-4 transition-colors transition-300">Başvuru
+                            class="flex items-center bg-primary text-light text-sm text-white font-semibold leading-none min-h-15 px-11 py-4 transition-colors transition-300">Başvuru
                             Formu</a>
                     </div>
                     <div
-                        class="delegates-list-heading min-h-15 py-2.5 px-5 bg-primary text-white font-semibold text-xl leading-tight mb-0.5 flex items-center">
+                        class="delegates-list-heading min-h-15 py-2.5 px-5 bg-primary text-light font-semibold text-xl leading-tight mb-0.5 flex items-center">
                         Kentsel Dönüşüm ve Planlama Komisyonu
                     </div>
                     <div class="row mb-2.5 pb-5">
