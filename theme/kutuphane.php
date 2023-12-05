@@ -30,7 +30,7 @@ include "header.php"; ?>
                             <form action="">
                                 <div class="flex items-center h-15">
                                     <label for="name" class="flex-1 h-full">
-                                        <input type="text" placeholder="Kitap Adı veya Yazar Adı" required id="name"
+                                        <input type="search" placeholder="Kitap Adı veya Yazar Adı" required id="name"
                                             name="name"
                                             class="w-full h-full border-none p-5 text-primary text-sm leading-none">
                                     </label>

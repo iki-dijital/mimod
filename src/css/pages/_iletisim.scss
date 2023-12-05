@@ -1,0 +1,47 @@
+#contact-content {
+  .black_info {
+    &::after {
+      top: 0;
+      left: 100%;
+      width: var(--gutter-width);
+      height: 100%;
+      background-color: get-color(secondary);
+    }
+  }
+}
+
+.contact_page_form {
+  %input {
+    height: 50px;
+    @include edit_placeholder {
+      color: get-color(secondary);
+      opacity: 1;
+    }
+  }
+  input{
+    @extend %input;
+  }
+  textarea{
+    @extend %input;
+    height: 150px;
+    resize: none;
+  }
+  button{
+    background-color: #B4B2AB;
+    min-height: 50px;
+    &:hover{
+        background-color: get-color(primary);
+    }
+  }
+}
+
+.agency_item{
+    padding-right: calc(var(--column-width) - var(--gutter-width));
+    .social{
+        a:hover{
+            svg{
+                fill: get-color(secondary);
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 <?php
-$js_file = 'etkinlikler';
+$js_file = 'ziyaret_ve_kabuller';
 include "header.php"; ?>
 <section id="page-banner" class="bg-primary mb-7.5">
     <div class="container h-full flex flex-col justify-center">
@@ -7,7 +7,7 @@ include "header.php"; ?>
         <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6" aria-label="Sayfa haritası">
             <a href="" class="text-light leading-tight relative transition-colors transition-300">Anasayfa</a>
             <a href="" class="text-light leading-tight relative transition-colors transition-300">Faaliyetler</a>
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">Etkinlikler</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300">Ziyaret ve Kabuller</a>
         </nav>
     </div>
 </section>
@@ -18,7 +18,7 @@ include "header.php"; ?>
                 <div class="content-wrapper">
                     <div class="dynamic-form mb-11.5">
                         <div class="form-wrapper py-2 pr-2 pl-5 bg-white flex justify-betwen items-center">
-                            <span class="text-xl text-secondary font-bold leading-none">Etkinlikler</span>
+                            <span class="text-xl text-secondary font-bold leading-none">Ziyaret ve Kabuller</span>
                             <form action="" class="flex-1 w-full flex justify-end gap-x-10">
                                 <div id="event_type_wrapper" class="custom-select">
                                     <select name="type" id="event_type" autocomplete="off">

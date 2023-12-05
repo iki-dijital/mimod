@@ -59,19 +59,19 @@
                     </div>
                 </form>
                 <div class="social flex items-center gap-x-13">
-                    <a href="" class="w-7 h-7 flex items-center jutify-center">
+                    <a href="" class="w-7 h-7 flex items-center jutify-center" target="_blank">
                         <?= getSprite("linkedin", "fill-secondary w-7 h-7 tranisiton-colors transition-300") ?>
                     </a>
-                    <a href="" class="w-7 h-7 flex items-center jutify-center">
+                    <a href="" class="w-7 h-7 flex items-center jutify-center" target="_blank">
                         <?= getSprite("instagram", "fill-secondary w-7 h-7 tranisiton-colors transition-300") ?>
                     </a>
-                    <a href="" class="w-7 h-7 flex items-center jutify-center">
+                    <a href="" class="w-7 h-7 flex items-center jutify-center" target="_blank">
                         <?= getSprite("youtube", "fill-secondary w-7 h-7 tranisiton-colors transition-300") ?>
                     </a>
-                    <a href="" class="w-7 h-7 flex items-center jutify-center">
+                    <a href="" class="w-7 h-7 flex items-center jutify-center" target="_blank">
                         <?= getSprite("twitter_x", "fill-secondary w-7 h-7 tranisiton-colors transition-300") ?>
                     </a>
-                    <a href="" class="w-7 h-7 flex items-center jutify-center">
+                    <a href="" class="w-7 h-7 flex items-center jutify-center" target="_blank">
                         <?= getSprite("facebook", "fill-secondary w-7 h-7 tranisiton-colors transition-300") ?>
                     </a>
                 </div>

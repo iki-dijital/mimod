@@ -241,7 +241,7 @@ include "header.php";
                     <form action="">
                         <div class="flex items-center h-15">
                             <label for="name" class="flex-1 h-full">
-                                <input type="text" placeholder="Kitap Adı veya Yazar Adı" required id="name" name="name"
+                                <input type="search" placeholder="Kitap Adı veya Yazar Adı" required id="name" name="name"
                                     class="w-full h-full border-none p-5 text-primary text-sm leading-none">
                             </label>
                             <button
@@ -301,7 +301,7 @@ include "header.php";
             <div class="row">
                 <div class="col-lg-12 flex justify-between items-center mb-12.5">
                     <div>
-                        <h2 class="font-3xl text-secondary font-bold leading-none mt-0 mb-2">KARİYER FIRSATLARI</h2>
+                        <h2 class="text-3xl text-secondary font-bold leading-none mt-0 mb-2">KARİYER FIRSATLARI</h2>
                         <p class="leading-snug my-0 text-secondary">Son Eklenen İlanları ve İş ilanlarını buradan takip
                             edebilirsiniz</p>
                     </div>

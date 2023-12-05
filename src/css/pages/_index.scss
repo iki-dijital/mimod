@@ -209,7 +209,7 @@
 #in-network-provider {
   margin-bottom: 140px;
   .wrapper {
-    background-color: #dad4c8;
+    background-color: get-color(cream);;
     &::before {
       z-index: -1;
       top: -20px;
