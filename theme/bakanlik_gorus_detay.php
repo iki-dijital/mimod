@@ -21,7 +21,7 @@ include "header.php"; ?>
                 <div class="content-wrapper">
                     <h2>Çevre ve Şehircilik Bakanlığının 22.02.2018 Otopark Yönetmeliği'nin Uygulamaları 
 Hakkındaki Görüşleri</h2>
-                    <div class="mt-8.5">
+                    <div class="mt-6.5">
                         <?php
                         $gorus_title_list = [
                             "Geçici Madde-3 konularına ilişkin Torbalı Belediyesine verilen görüş",

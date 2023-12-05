@@ -1,8 +1,12 @@
 import { initMasonry } from './lib/generatemasonry';
+import { calculateTriangle } from './lib/megamenu.js';
+import { toggleSearchOverlay } from './lib/searchoverlay.js';
 
 import GLightbox from 'glightbox';
 
 initMasonry();
+calculateTriangle();
+toggleSearchOverlay();
 
 const videoGallery = document.querySelector('.video-gallery');
 

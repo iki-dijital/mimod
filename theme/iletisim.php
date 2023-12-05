@@ -1,5 +1,5 @@
 <?php
-$js_file = 'anlasmali_kurumlar';
+$js_file = 'iletisim';
 include "header.php"; ?>
 <section id="page-banner" class="bg-primary">
     <div class="container h-full flex flex-col justify-center">

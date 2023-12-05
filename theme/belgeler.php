@@ -17,7 +17,7 @@ include "header.php"; ?>
             <div class="col-lg-9">
                 <div class="content-wrapper">
                     <h2>Belgeler</h2>
-                    <div class="mt-8.5">
+                    <div class="mt-6.5">
                         <?php
                         $belgeler_title_list = ["Yapı Tanıtım Belgesi", "TUS Sözleşme Örneği", "Sicil Durum Belgesi Başvuru FOrmu Ücretli Çalışan İçin", "Sicil Durum Belgesi Başvuru Formu Kendine Özel Proje Çalışması", "Gazete İlan Örnek", "Mimari Proje Kontrol Formu", "Sicil Durum Belgesi Başvuru Formu Kamu Personeli İçin"];
                         for ($i = 1; $i <= 7; $i++): ?>

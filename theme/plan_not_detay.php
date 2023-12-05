@@ -1,5 +1,5 @@
 <?php
-$js_file = 'bakanlik_gorus_detay';
+$js_file = 'plan_not_detay';
 include "header.php"; ?>
 <section id="page-banner" class="bg-primary mb-7.5">
     <div class="container h-full flex flex-col justify-center">
@@ -20,7 +20,7 @@ include "header.php"; ?>
             <div class="col-lg-9">
                 <div class="content-wrapper">
                     <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-                    <div class="mt-8.5">
+                    <div class="mt-6.5">
                         <?php
                         for ($i = 1; $i <= 6; $i++): ?>
                             <a href=""

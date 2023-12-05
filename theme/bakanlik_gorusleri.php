@@ -1,5 +1,5 @@
 <?php
-$js_file = 'raporlar';
+$js_file = 'bakanlik_gorusleri';
 include "header.php"; ?>
 <section id="page-banner" class="bg-primary mb-7.5">
     <div class="container h-full flex flex-col justify-center">
@@ -17,7 +17,7 @@ include "header.php"; ?>
             <div class="col-lg-9">
                 <div class="content-wrapper">
                     <h2>Bakanlık Görüşleri</h2>
-                    <div class="row mt-8.5">
+                    <div class="row mt-6.5">
                         <?php
                         $bakanlik_gorus_list = [
                             "Çevre ve Şehircilik Bakanlığının

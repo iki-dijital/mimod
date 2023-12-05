@@ -17,7 +17,7 @@ include "header.php"; ?>
             <div class="col-lg-9">
                 <div class="content-wrapper">
                     <h2>Yönetmelikler</h2>
-                    <div class="mt-8.5">
+                    <div class="mt-6.5">
                         <?php
                         for ($i = 1; $i <= 6; $i++): ?>
                             <a href=""

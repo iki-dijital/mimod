@@ -18,7 +18,7 @@ include "header.php"; ?>
             <div class="col-lg-9">
                 <div class="content-wrapper">
                     <h2>Yapı Birim Maliyetleri</h2>
-                    <div class="mt-8.5">
+                    <div class="mt-6.5">
                         <?php
                         $yapi_birim_title_list = [
                             "2023 / 2 Yapı Birim Maliyetleri",

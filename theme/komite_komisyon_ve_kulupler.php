@@ -1,5 +1,5 @@
 <?php
-$js_file = 'oda_genel_kurul_delegeleri';
+$js_file = 'komite_komisyon_ve_kulupler';
 include "header.php"; ?>
 <section id="page-banner" class="bg-primary mb-7.5">
     <div class="container h-full flex flex-col justify-center">

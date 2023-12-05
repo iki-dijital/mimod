@@ -17,7 +17,7 @@ include "header.php"; ?>
             <div class="col-lg-9">
                 <div class="content-wrapper">
                     <h2>Raporlar</h2>
-                    <div class="mt-8.5">
+                    <div class="mt-6.5">
                         <?php for ($i = 1; $i <= 4; $i++): ?>
                             <a href=""
                                 class="download_component mb-6 bg-white flex items-center justify-between min-h-20 pl-3 transition-shadow transition-300">
