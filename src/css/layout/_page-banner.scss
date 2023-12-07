@@ -3,10 +3,10 @@
 }
 #banner-breadcrumb {
   a {
-    &:not(:first-of-type):before {
+    &:not(:last-of-type):before {
       content: '/';
       position: absolute;
-      left: -15px;
+      right: -15px;
       top: 3px;
       color: #fff;
       font-size: 16px;
@@ -14,6 +14,13 @@
     }
     &:hover {
       color: get-color(secondary);
+    }
+  }
+  @include max_responsive(sm){
+    a{
+      &:not(:last-of-type):before{
+        font-size: 14px;
+      }
     }
   }
 }

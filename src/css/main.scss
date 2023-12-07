@@ -24,6 +24,7 @@
 @import 'base/animations';
 @import 'base/mobile';
 
+/*! purgecss start ignore */
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/fade-slide';
@@ -38,4 +39,4 @@
 @import 'pages/index';
 @import 'pages/is-basvuru';
 @import 'pages/iletisim';
-
+/*! purgecss end ignore */

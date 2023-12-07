@@ -1,15 +1,16 @@
 <?php
 $js_file = 'is_formu';
 include "header.php"; ?>
-<section id="page-banner" class="bg-primary mb-7.5">
+<section id="page-banner" class="bg-primary mb-7.5 md:mb-0">
     <div class="container h-full flex flex-col justify-center">
         <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">Kariyer Fırsatları</h1>
-        <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6" aria-label="Sayfa haritası">
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">Anasayfa</a>
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">İş İlanı Formu</a>
+        <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6 flex-wrap gap-y-2"" aria-label="Sayfa haritası">
+            <a href="" class="text-light leading-tight relative transition-colors transition-300 whitespace-nowrap sm:text-sm">Anasayfa</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300 whitespace-nowrap sm:text-sm">İş İlanı Formu</a>
         </nav>
     </div>
 </section>
+<div class="bottom-menu hidden md:flex bg-secondary text-center justify-center py-5 mb-7.5"></div>
 <section id="page-content">
     <div class="container">
         <div class="row">
@@ -19,34 +20,34 @@ include "header.php"; ?>
                     <fieldset class="p-0 mt-0 mb-8 mx-0 border-none">
                         <legend class="font-semibold leading-none text-secondary mt-0 mb-6.5">İlan Kategorisi Seçiniz
                         </legend>
-                        <div class="categories flex items-center gap-x-9">
-                            <label for="personal" class="relative flex items-center gap-x-3 cursor-pointer">
+                        <div class="categories flex items-center gap-x-9 xs:gap-y-4 md:gap-x-4 md:justify-between xs:flex-wrap">
+                            <label for="personal" class="relative flex items-center gap-x-3 cursor-pointer xs:flex-none xs:w-2/5">
                                 <input type="radio" id="personal" name="job_category"
                                     class="absolute z-2 top-0 left-0 w-full h-full opacity-0 cursor-pointer">
                                 <span
-                                    class="icon block w-6 h-6 rounded-full border border-solid border-secondary relative after-absolute"></span>
-                                <span class="text">Personel Arayanlar</span>
+                                    class="icon block flex-none w-6 h-6 rounded-full border border-solid border-secondary relative after-absolute"></span>
+                                <span class="text md:text-sm">Personel Arayanlar</span>
                             </label>
-                            <label for="looking_job" class="relative flex items-center gap-x-3 cursor-pointer">
+                            <label for="looking_job" class="relative flex items-center gap-x-3 cursor-pointer xs:flex-none xs:w-2/5">
                                 <input type="radio" id="looking_job" name="job_category"
                                     class="absolute z-2 top-0 left-0 w-full h-full opacity-0 cursor-pointer">
                                 <span
-                                    class="icon block w-6 h-6 rounded-full border border-solid border-secondary relative after-absolute"></span>
-                                <span class="text">İş Arayanlar</span>
+                                    class="icon block flex-none w-6 h-6 rounded-full border border-solid border-secondary relative after-absolute"></span>
+                                <span class="text md:text-sm">İş Arayanlar</span>
                             </label>
-                            <label for="looking_intern" class="relative flex items-center gap-x-3 cursor-pointer">
+                            <label for="looking_intern" class="relative flex items-center gap-x-3 cursor-pointer xs:flex-none xs:w-2/5">
                                 <input type="radio" id="looking_intern" name="job_category"
                                     class="absolute z-2 top-0 left-0 w-full h-full opacity-0 cursor-pointer">
                                 <span
-                                    class="icon block w-6 h-6 rounded-full border border-solid border-secondary relative after-absolute"></span>
-                                <span class="text">Stajyer Arayanlar</span>
+                                    class="icon block flex-none w-6 h-6 rounded-full border border-solid border-secondary relative after-absolute"></span>
+                                <span class="text md:text-sm">Stajyer Arayanlar</span>
                             </label>
-                            <label for="looking_internship" class="relative flex items-center gap-x-3 cursor-pointer">
+                            <label for="looking_internship" class="relative flex items-center gap-x-3 cursor-pointer xs:flex-none xs:w-2/5">
                                 <input type="radio" id="looking_internship" name="job_category"
                                     class="absolute z-2 top-0 left-0 w-full h-full opacity-0 cursor-pointer">
                                 <span
-                                    class="icon block w-6 h-6 rounded-full border border-solid border-secondary relative after-absolute"></span>
-                                <span class="text">Staj Yeri Arayanlar</span>
+                                    class="icon block flex-none w-6 h-6 rounded-full border border-solid border-secondary relative after-absolute"></span>
+                                <span class="text md:text-sm">Staj Yeri Arayanlar</span>
                             </label>
                         </div>
                     </fieldset>
@@ -116,7 +117,7 @@ include "header.php"; ?>
                             </span>
                         </label>
                     </div>
-                    <div class="flex justify-end -mt-2">
+                    <div class="flex justify-end -mt-2 md:mt-6">
                         <button type="submit"
                             class="btn bg-cream text-secondary leading-none py-2 px-10 transition-colors transition-300 border-none cursor-pointer">Gönder</button>
                     </div>

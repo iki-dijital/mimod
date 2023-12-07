@@ -47,13 +47,15 @@
 
 // Container Generator
 @each $key, $val in $container-max-widths {
+  $container-width: map.get($container-max-widths, $key);
+  $gutter-total: (($number-of-col - 1) * $grid-gutter);
+  $col-width: math.div($container-width, $number-of-col);
+
   .container-#{$key} {
     @extend .container-fluid;
   }
+  $get-index: list.index($container-max-widths, ($key $val));
   @include generate_container_up($key) {
-    $container-width: map.get($container-max-widths, $key);
-    $gutter-total: (($number-of-col - 1) * $grid-gutter);
-    $col-width: math.div($container-width, $number-of-col);
     :root {
       --column-width: #{$col-width};
       --gutter-total: #{$gutter-total};

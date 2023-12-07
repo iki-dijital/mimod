@@ -1,14 +1,14 @@
 @include max_responsive(md) {
   .header_sm {
-    padding: 30px 0;
-    z-index: 5;
-
+    padding: 15px 0;
+    .container-lg {
+      padding: 0 20px;
+    }
     .menuButton {
       width: 30px;
       height: 20px;
-      margin-left: auto;
       span {
-        transition: .3s all;
+        transition: 0.3s all;
         height: 3px;
         background-color: #fff;
         border-radius: 2px;
@@ -37,22 +37,67 @@
   }
 
   .mobileMenu {
-    transition: .4s left, .4s opacity;
+    transition: 0.4s left, 0.4s opacity;
     left: 100vw;
     top: 0;
     opacity: 0;
+    overflow-y: scroll;
+    &.show {
+      left: 20vw;
+      opacity: 1;
+    }
+
+    .accordion-button {
+      &::before {
+        content: '\2796';
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: translateY(-50%);
+        color: transparent;
+        text-shadow: 0 0 0 get-color(light);
+        transition: 0.3s transform, 0.3s color;
+        @include get_font(600, 18px, 1);
+      }
+      &::after {
+        content: unset;
+      }
+      &.collapsed {
+        &::before {
+          content: '\2795';
+        }
+      }
+    }
+  }
+  .mobileMenuBackdrop {
+    background-color: rgba(#000, 0.5);
+    &.show {
+      opacity: 1;
+      user-select: auto;
+      pointer-events: auto;
+    }
+  }
+  #page-menu {
+    left: -80vw;
+    transition: 0.4s left;
+    #page-menu-close {
+      top: calc(var(--mobile-header) + 25px);
+      transform: translateY(-50%);
+    }
     &.show {
       left: 0;
-      opacity: 1;
     }
   }
 }
 
 nav[id^='nav-mobile'] {
-  padding-left: 30px;
+  padding-left: 12px;
   gap: 15px;
   a {
     color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    @include get_font(600, 30px, 1);
   }
 }
 
@@ -64,7 +109,7 @@ nav[id^='nav-mobile']:not(#nav-mobile-1) {
   height: 100vh;
   transform: translateX(100%);
   background-color: var(--color-primary);
-  transition: .4s transform;
+  transition: 0.4s transform;
 }
 
 nav[id^='nav-mobile']:not(#nav-mobile-1).show {

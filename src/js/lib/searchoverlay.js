@@ -1,15 +1,14 @@
 const searchOverlay = document.getElementById('search_overlay');
-const searchOverlayBackDrop = document.getElementById('search_overlay_backdrop');
-const overlayTriggerButton = document.getElementById('header_search');
-const closeSearchOverlayButton = document.getElementById('close_search');
+const searchOverlayBackDrop = document.getElementById(
+  'search_overlay_backdrop'
+);
+const overlayTriggerButtons =
+  document.querySelectorAll('.header_search');
+const closeSearchOverlayButton =
+  document.getElementById('close_search');
 const bodyElement = document.querySelector('body');
 let scrollBarWidth = 0;
 
-function getScrollBarWidth() {
-  scrollBarWidth =
-    document.documentElement.scrollWidth -
-    document.documentElement.clientWidth;
-}
 
 function openMenu() {
   searchOverlay.classList.add('show');
@@ -17,7 +16,9 @@ function openMenu() {
   bodyElement.classList.add('overflow-hidden');
   bodyElement.style.paddingRight = `${scrollBarWidth}px`;
 
-  overlayTriggerButton.removeEventListener('click', openMenu);
+  overlayTriggerButtons.forEach((button) => {
+    button.removeEventListener('click', openMenu);
+  });
   searchOverlayBackDrop.addEventListener('click', closeMenu);
   closeSearchOverlayButton.addEventListener('click', closeMenu);
   window.removeEventListener('keyup', closeMenuOnEscape);
@@ -30,7 +31,9 @@ function closeMenu() {
   bodyElement.classList.remove('overflow-hidden');
   bodyElement.removeAttribute('style');
 
-  overlayTriggerButton.addEventListener('click', openMenu);
+  overlayTriggerButtons.forEach((button) => {
+    button.addEventListener('click', openMenu);
+  });
   searchOverlayBackDrop.removeEventListener('click', closeMenu);
   closeSearchOverlayButton.removeEventListener('click', closeMenu);
   window.removeEventListener('keyup', closeMenuOnEscape);
@@ -43,9 +46,8 @@ function closeMenuOnEscape(e) {
 }
 
 export function toggleSearchOverlay() {
-  overlayTriggerButton.addEventListener('click', openMenu);
+  overlayTriggerButtons.forEach((button) => {
+    button.addEventListener('click', openMenu);
+  });
   window.addEventListener('keyup', closeMenuOnEscape);
-  window.addEventListener('resize', getScrollBarWidth);
-
-  getScrollBarWidth();
 }

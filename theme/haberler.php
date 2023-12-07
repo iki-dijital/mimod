@@ -1,15 +1,17 @@
 <?php
 $js_file = 'haberler';
 include "header.php"; ?>
-<section id="page-banner" class="bg-primary mb-7.5">
+<section id="page-banner" class="bg-primary mb-7.5 md:mb-0">
     <div class="container h-full flex flex-col justify-center">
         <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">Faaliyetler</h1>
-        <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6" aria-label="Sayfa haritası">
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">Anasayfa</a>
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">Haber Arşivi</a>
+        <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6 flex-wrap gap-y-2"" aria-label="Sayfa haritası">
+            <a href="" class="text-light leading-tight relative transition-colors transition-300 whitespace-nowrap sm:text-sm">Anasayfa</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300 whitespace-nowrap sm:text-sm">Haber Arşivi</a>
         </nav>
     </div>
 </section>
+<div class="bottom-menu hidden md:flex bg-secondary text-center justify-center py-5 mb-7.5">
+</div>
 <section id="page-content">
     <div class="container">
         <div class="row">
@@ -34,7 +36,7 @@ include "header.php"; ?>
                     <div class="row">
                         <?php
                         for ($i = 1; $i <= 30; $i++): ?>
-                            <div class="col-lg-3">
+                            <div class="col-xl-3 col-6">
                                 <a href=""
                                     class="gorus_component block px-2 pt-2 pb-8 bg-white mb-6 transition-shadow transition-300 text-secondary relative">
                                     <div

@@ -85,4 +85,11 @@ footer {
       }
     }
   }
+  @include max_responsive(md){
+    .footer-left{
+      &::after{
+        content: unset;
+      }
+    }
+  }
 }

@@ -23,6 +23,7 @@
     --slides-to-show: 4.9;
     --slide-gap: 24px;
   }
+  @include responsive_width(("1399px": (5, 24px), "1199px": (4, 12px), "767px": (3, 12px), "500px": (2, 12px)));
 }
 
 #home-events-blaze{
@@ -30,6 +31,7 @@
     --slides-to-show: 7.5 ;
     --slide-gap: 24px;
   }
+  @include responsive_width(("1399px": (5, 24px), "1199px": (4, 12px), "767px": (3, 12px), "500px": (2, 12px)));
 }
 
 .blaze-container {

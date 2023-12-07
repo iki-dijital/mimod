@@ -4,21 +4,21 @@ include "header.php"; ?>
 <section id="page-banner" class="bg-primary">
     <div class="container h-full flex flex-col justify-center">
         <h1 class="text-3xl text-center font-bold leading-none text-secondary mt-0">İletişim</h1>
-        <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6" aria-label="Sayfa haritası">
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">Anasayfa</a>
-            <a href="" class="text-light leading-tight relative transition-colors transition-300">İletişim</a>
+        <nav id="banner-breadcrumb" class="flex justify-center items-center gap-x-6 flex-wrap gap-y-2"" aria-label="Sayfa haritası">
+            <a href="" class="text-light leading-tight relative transition-colors transition-300 whitespace-nowrap sm:text-sm">Anasayfa</a>
+            <a href="" class="text-light leading-tight relative transition-colors transition-300 whitespace-nowrap sm:text-sm">İletişim</a>
         </nav>
     </div>
 </section>
 <section id="contact-content">
     <div class="container">
         <div class="row mb-6">
-            <div class="col-lg-5 py-23">
+            <div class="col-lg-5 py-23 md:py-10">
                 <div
-                    class="black_info bg-secondary relative after-absolute flex flex-col justify-center items-start pl-8 py-5 h-full">
+                    class="black_info bg-secondary relative after-absolute flex flex-col justify-center items-start pl-8 py-5 md:py-10 md:px-3 h-full">
                     <img src="<?= domain ?>assets/img/svg/logo_white.svg" alt="TMMOB Mimarlar Odası Konya Şubesi"
                         class="block mb-10 h-15">
-                    <div class="flex flex-col gap-y-4">
+                    <div class="flex flex-col gap-y-4 md:gap-y-3">
                         <div class="flex items-center gap-x-4">
                             <div class="flex-none w-6 h-5 flex items-center justify-center">
                                 <?= getSprite("agency_map", "fill-light w-5 h-5") ?>
@@ -48,7 +48,7 @@ include "header.php"; ?>
             </div>
             <div class="col-lg-7">
                 <div class="bg-cream py-23">
-                    <div class="w-5/7 mx-auto">
+                    <div class="w-5/7 md:w-full md:px-3 mx-auto">
                         <form action="" class="contact_page_form">
                             <span class="block text-secondary text-xl font-bold leading-none mb-6">İletişim Formu</span>
                             <label for="name" class="block w-full mb-6">
@@ -90,7 +90,7 @@ include "header.php"; ?>
             <div class="col-lg-12">
                 <h2 class="text-secondary text-xl font-bold leading-none mt-0 mb-6">Temsilcilikler</h2>
                 <?php for ($i = 1; $i <= 6; $i++): ?>
-                    <div class="agency_item bg-cream flex justify-between items-center pt-6 pl-4 pb-9 mb-6">
+                    <div class="agency_item bg-cream flex md:flex-col md:gap-y-5 justify-between items-center pt-6 pl-4 pb-9 md:pb-6 mb-6">
                         <div>
                             <h3 class="font-bold leading-none text-secondary mt-0 mb-4.5">Afyonkarahisar Temsilciliği</h3>
                             <div class="flex flex-col gap-y-2">

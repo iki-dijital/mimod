@@ -8,6 +8,13 @@
       background-color: get-color(secondary);
     }
   }
+  @include max_responsive(md){
+    .black_info{
+      &::after{
+        content: unset;
+      }
+    }
+  }
 }
 
 .contact_page_form {

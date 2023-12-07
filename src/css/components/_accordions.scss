@@ -7,18 +7,19 @@
   }
   .accordion-button {
     &::before {
-      content: '+';
+      content: '\2796';
       position: absolute;
       top: 50%;
       right: 18px;
-      transform: translateY(-50%) rotate(45deg);
-      color: get-color(light);
+      transform: translateY(-50%);
+      color: transparent;
+      text-shadow: 0 0 0 get-color(light);
       transition: 0.3s transform, 0.3s color;
-      @include get_font(600, 30px, 1);
+      @include get_font(600, 18px, 1);
     }
     &.collapsed {
       &::before {
-        transform: translateY(-50%);
+        content: '\2795';
       }
     }
     &::after {

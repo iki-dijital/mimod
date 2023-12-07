@@ -56,6 +56,9 @@
     margin-right: 75%;
   }
   .board-member {
+    h3 {
+      margin-bottom: 2px;
+    }
     .img {
       background-color: #e5e3de;
       aspect-ratio: 220/286;
@@ -122,6 +125,24 @@
       margin: 0;
     }
   }
+
+  @include max_responsive(sm) {
+    .library-search {
+      form {
+        padding: 90px 0;
+      }
+    }
+  }
+  @include max_responsive(xs) {
+    .delegates-table{
+      margin-bottom: 0;
+    }
+    .library-search {
+      & > img {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .video-gallery {
@@ -171,10 +192,10 @@
   }
 }
 
-.in-network-anchor{
+.in-network-anchor {
   aspect-ratio: 636/400;
 }
 
-.banner-img{
+.banner-img {
   aspect-ratio: 1920/690;
 }

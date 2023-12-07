@@ -21,14 +21,14 @@ include "components/svg-sprite.php";
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';"
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet"
-        href="<?= domain ?>assets/css/main.css<?= $_SERVER['REMOTE_ADDR'] == '::1' ? '?v=' . rand() : '' ?>">
+        href="<?= domain ?>assets/css/main.css<?= $_SERVER['REMOTE_ADDR'] == '::1' ? '?v='.rand() : '' ?>">
 </head>
 
 <body class="bg-light">
     <div id="search_overlay"
-        class="absolute top-0 left-0 w-full h-2/7 z-6 bg-light flex justify-center items-center transition-400 transition-transform">
-        <svg class="absolute top-5 right-5 cursor-pointer transition-300 transition-colors"
-            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="currentColor"
+        class="absolute top-0 left-0 w-full h-2/7 z-8 bg-light flex justify-center items-center transition-400 transition-transform">
+        <svg class="absolute top-5 right-5 cursor-pointer transition-300 transition-colors w-10 h-10 xs:w-7 xs:h-7"
+            xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
             stroke-width="1.5" id="close_search" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
@@ -36,14 +36,14 @@ include "components/svg-sprite.php";
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <form action="">
-                        <div class="flex items-center h-20">
+                        <div class="flex items-center h-20 xs:h-15">
                             <label for="name" class="flex-1 h-full">
                                 <input type="text" placeholder="Ne Aramıştınız?" id="name" name="name"
                                     class="w-full h-full border-none p-5 text-primary leading-none" required>
                             </label>
                             <button
-                                class="flex-none block h-full w-20 aspect-square flex items-center justify-center transition-colors transition-300 bg-primary border-none cursor-pointer">
-                                <?= getSprite("search_icon", "fill-white w-7 h-7") ?>
+                                class="flex-none block h-full w-20 xs:w-15 aspect-square flex items-center justify-center transition-colors transition-300 bg-primary border-none cursor-pointer">
+                                <?= getSprite("search_icon", "fill-white w-7 xs:w-5 h-7 xs:h-5") ?>
                             </button>
                         </div>
                     </form>
@@ -64,10 +64,10 @@ include "components/svg-sprite.php";
                     </a>
                 </div>
                 <div class="col-lg-9 flex items-end justify-end gap-x-9.5">
-                    <ul aria-label="Main menu" id="main-nav" class="flex gap-x-10.5">
+                    <ul aria-label="Main menu" id="main-nav" class="flex gap-x-10.5 lg:gap-x-5">
                         <li class="has-mega-menu">
                             <a href=""
-                                class="text-secondary block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
+                                class="text-secondary inline-block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
                                 Konya Şube
                             </a>
                             <div
@@ -158,7 +158,7 @@ include "components/svg-sprite.php";
                         </li>
                         <li class="has-dropdown relative">
                             <a href=""
-                                class="text-secondary block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
+                                class="text-secondary inline-block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
                                 Mevzuat
                             </a>
                             <div
@@ -184,7 +184,7 @@ include "components/svg-sprite.php";
                         </li>
                         <li class="has-dropdown relative">
                             <a href=""
-                                class="text-secondary block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
+                                class="text-secondary inline-block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
                                 Faaliyetler
                             </a>
                             <div
@@ -200,19 +200,18 @@ include "components/svg-sprite.php";
                         </li>
                         <li>
                             <a href=""
-                                class="text-secondary block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
+                                class="text-secondary inline-block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
                                 Haber Arşivi
                             </a>
                         </li>
                         <li>
                             <a href=""
-                                class="text-secondary block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
+                                class="text-secondary inline-block font-medium pb-7.5 pt-4 transition-300 relative after-absolute">
                                 İletişim
                             </a>
                         </li>
                     </ul>
-                    <span aria-label="Arama" class="cursor-pointer w-6 h-6 block mb-7.5" class="search"
-                        id="header_search">
+                    <span aria-label="Arama" class="header_search cursor-pointer w-6 h-6 block mb-7.5">
                         <?= getSprite("search_icon", "fill-dark w-6 h-6") ?>
                     </span>
                 </div>
@@ -220,16 +219,20 @@ include "components/svg-sprite.php";
         </div>
     </header>
 
-    <header class="header_sm relative hidden md:block bg-primary z-5">
-        <div class="container">
+    <header class="header_sm relative hidden md:block bg-secondary z-7">
+        <div class="container-lg">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-sm-4">
                     <a href="" class="logo">
-                        <img src="<?= domain ?>assets/img/svg/logo.svg" alt="">
+                        <img src="<?= domain ?>assets/img/svg/logo_white.svg" alt="TMMOB Mimarlar Odası Konya Şubesi"
+                            class="block w-full h-15 object-contain object-left">
                     </a>
                 </div>
-                <div class="col-6 flex items-center">
-                    <div class="menuButton bg-primary relative flex flex-col items-center justify-between">
+                <div class="col-6 col-sm-8 flex items-center justify-end gap-x-6">
+                    <span aria-label="Arama" class="header_search cursor-pointer w-6 h-6 block">
+                        <?= getSprite("search_icon", "fill-light w-6 h-6") ?>
+                    </span>
+                    <div class="menuButton relative flex flex-col items-center justify-between">
                         <span class="block w-full"></span>
                         <span class="block w-full absolute"></span>
                         <span class="block w-full"></span>
@@ -239,7 +242,157 @@ include "components/svg-sprite.php";
             </div>
         </div>
     </header>
-
-    <div class="mobileMenu hidden md:block fixed w-screen h-screen z-4 bg-primary">
-        <nav aria-label="Mobile menu" id="nav-mobile-1"></nav>
+    <div class="mobileMenuBackdrop fixed top-0 left-0 w-full h-full z-4 transition-opacity transition-300 pointer-events-none select-none opacity-0"></div>
+    <div class="mobileMenu hidden md:block fixed w-4/5 h-screen z-6 bg-primary pb-10">
+        <div class="accordion flex flex-col gap-y-4" id="nav-mobile-1">
+            <div class="accordion-item">
+                <h2 class="accordion-header my-0">
+                    <button class="accordion-button collapsed text-2xl font-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false"
+                        aria-controls="collapse-1">
+                        Konya Şube
+                    </button>
+                </h2>
+                <div id="collapse-1" class="accordion-collapse collapse" data-bs-parent="#nav-mobile-1">
+                    <div class="accordion-body pl-6 pr-3 py-4">
+                        <!-- Mega Menu Start -->
+                        <div class="accordion flex flex-col gap-y-3" id="sub-accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header my-0">
+                                    <button
+                                        class="accordion-button collapsed text-xl xs:text-lg font-semibold pl-2 pr-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1-1"
+                                        aria-expanded="false" aria-controls="collapse-1-1">
+                                        HAKKIMIZDA
+                                    </button>
+                                </h2>
+                                <div id="collapse-1-1" class="accordion-collapse collapse"
+                                    data-bs-parent="#sub-accordion">
+                                    <div class="accordion-body px-2 flex flex-col gap-y-3 pt-4 pb-3">
+                                        <a href="" class="block text-white xs:text-sm">Kuruluş ve Amaç</a>
+                                        <a href="" class="block text-white xs:text-sm">Şube Yönetim Kurulu</a>
+                                        <a href="" class="block text-white xs:text-sm">Kütüphane</a>
+                                        <a href="" class="block text-white xs:text-sm">Çalışma Raporları</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header my-0">
+                                    <button
+                                        class="accordion-button collapsed text-xl xs:text-lg font-semibold pl-2 pr-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1-2"
+                                        aria-expanded="false" aria-controls="collapse-1-2">
+                                        ORGANLAR
+                                    </button>
+                                </h2>
+                                <div id="collapse-1-2" class="accordion-collapse collapse"
+                                    data-bs-parent="#sub-accordion">
+                                    <div class="accordion-body px-2 flex flex-col gap-y-3 pt-4 pb-3">
+                                        <a href="" class="block text-white xs:text-sm">Denetleme Kurulu</a>
+                                        <a href="" class="block text-white xs:text-sm">Soruşturma ve Uzlaştırma
+                                            Kurulu</a>
+                                        <a href="" class="block text-white xs:text-sm">Oda Genel Kurul Delegeleri</a>
+                                        <a href="" class="block text-white xs:text-sm">Komite, Komisyon ve Kulüpler</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header my-0">
+                                    <button
+                                        class="accordion-button collapsed text-xl xs:text-lg font-semibold pl-2 pr-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1-3"
+                                        aria-expanded="false" aria-controls="collapse-1-3">
+                                        MESLEKİ DENETİM
+                                    </button>
+                                </h2>
+                                <div id="collapse-1-3" class="accordion-collapse collapse"
+                                    data-bs-parent="#sub-accordion">
+                                    <div class="accordion-body px-2 flex flex-col gap-y-3 pt-4 pb-3">
+                                        <a href="" class="block text-white xs:text-sm">Belgeler</a>
+                                        <a href="" class="block text-white xs:text-sm">En Az Bedel Hesabı</a>
+                                        <a href="" class="block text-white xs:text-sm">Yapı Birim Maliyetleri</a>
+                                        <a href="" class="block text-white xs:text-sm">Mimari Çizim Standartları</a>
+                                        <a href="" class="block text-white xs:text-sm">Sürekli Mesleki Gelişim</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header my-0">
+                                    <button
+                                        class="accordion-button collapsed text-xl xs:text-lg font-semibold pl-2 pr-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1-4"
+                                        aria-expanded="false" aria-controls="collapse-1-4">
+                                        ÜYELİK
+                                    </button>
+                                </h2>
+                                <div id="collapse-1-4" class="accordion-collapse collapse"
+                                    data-bs-parent="#sub-accordion">
+                                    <div class="accordion-body px-2 flex flex-col gap-y-3 pt-4 pb-3">
+                                        <a href="" class="block text-white xs:text-sm">Kayıt Koşulları</a>
+                                        <a href="" class="block text-white xs:text-sm">Ödenti ve Belgeler</a>
+                                        <a href="" class="block text-white xs:text-sm">Büro Tescil</a>
+                                        <a href="" class="block text-white xs:text-sm">Öğrenci Üyelik</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header my-0">
+                                    <button
+                                        class="accordion-button collapsed text-xl xs:text-lg font-semibold pl-2 pr-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1-5"
+                                        aria-expanded="false" aria-controls="collapse-1-5">
+                                        YAYINLAR
+                                    </button>
+                                </h2>
+                                <div id="collapse-1-5" class="accordion-collapse collapse"
+                                    data-bs-parent="#sub-accordion">
+                                    <div class="accordion-body px-2 flex flex-col gap-y-3 pt-4 pb-3">
+                                        <a href="" class="block text-white xs:text-sm">Mimaran</a>
+                                        <a href="" class="block text-white xs:text-sm">Bültenler</a>
+                                        <a href="" class="block text-white xs:text-sm">Raporlar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mega Menu End -->
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header my-0">
+                    <button class="accordion-button collapsed text-2xl font-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false"
+                        aria-controls="collapse-2">
+                        Mevzuat
+                    </button>
+                </h2>
+                <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#nav-mobile-1">
+                    <div class="accordion-body flex flex-col gap-y-3 pl-6 pr-3 py-4">
+                        <a href="" class="block text-white xs:text-sm">Mimarlar Odası Mevzuatı</a>
+                        <a href="" class="block text-white xs:text-sm">Bakanlık Görüşleri</a>
+                        <a href="" class="block text-white xs:text-sm">Kanunlar</a>
+                        <a href="" class="block text-white xs:text-sm">Yönetmelikler</a>
+                        <a href="" class="block text-white xs:text-sm">Plan Notları</a>
+                        <a href="" class="block text-white xs:text-sm">Sözleşmeler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header my-0">
+                    <button class="accordion-button collapsed text-2xl font-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false"
+                        aria-controls="collapse-3">
+                        Faaliyetler
+                    </button>
+                </h2>
+                <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#nav-mobile-1">
+                    <div class="accordion-body flex flex-col gap-y-3 pl-6 pr-3 py-4">
+                        <a href="" class="block text-white xs:text-sm">Etkinlikler</a>
+                        <a href="" class="block text-white xs:text-sm">Ziyaretler ve Kabuller</a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="text-2xl text-white font-bold px-5">Haber Arşivi</a>
+            <a href="" class="text-2xl text-white font-bold px-5">İletişim</a>
+        </div>
     </div>

@@ -1,35 +1,35 @@
-https://demo.crater.com.tr/mimod/anlasmali_kurumlar.php
-https://demo.crater.com.tr/mimod/bakanlik_gorusleri.php
-https://demo.crater.com.tr/mimod/bakanlik_gorus_detay.php
-https://demo.crater.com.tr/mimod/belgeler.php
-https://demo.crater.com.tr/mimod/bultenler.php
-https://demo.crater.com.tr/mimod/buro_tescil.php
-https://demo.crater.com.tr/mimod/calisma_raporlari.php
-https://demo.crater.com.tr/mimod/denetleme_kurulu.php
-https://demo.crater.com.tr/mimod/etkinlikdetay.php
-https://demo.crater.com.tr/mimod/etkinlikler.php
-https://demo.crater.com.tr/mimod/haberdetay.php
-https://demo.crater.com.tr/mimod/haberler.php
++ https://demo.crater.com.tr/mimod/anlasmali_kurumlar.php
++ https://demo.crater.com.tr/mimod/bakanlik_gorusleri.php
++ https://demo.crater.com.tr/mimod/bakanlik_gorus_detay.php
++ https://demo.crater.com.tr/mimod/belgeler.php
++ https://demo.crater.com.tr/mimod/bultenler.php
++ https://demo.crater.com.tr/mimod/buro_tescil.php
++ https://demo.crater.com.tr/mimod/calisma_raporlari.php
++ https://demo.crater.com.tr/mimod/denetleme_kurulu.php
++ https://demo.crater.com.tr/mimod/etkinlikdetay.php
++ https://demo.crater.com.tr/mimod/etkinlikler.php
++ https://demo.crater.com.tr/mimod/haberdetay.php
++ https://demo.crater.com.tr/mimod/haberler.php
 https://demo.crater.com.tr/mimod/iletisim.php
-https://demo.crater.com.tr/mimod/index.php
-https://demo.crater.com.tr/mimod/is_formu.php
-https://demo.crater.com.tr/mimod/kanunlar.php
-https://demo.crater.com.tr/mimod/kariyer_firsatlari.php
-https://demo.crater.com.tr/mimod/kayit_kosullari.php
-https://demo.crater.com.tr/mimod/komite_komisyon_ve_kulupler.php
-https://demo.crater.com.tr/mimod/kurulus_ve_amac.php
-https://demo.crater.com.tr/mimod/kutuphane.php
-https://demo.crater.com.tr/mimod/mimaran.php
-https://demo.crater.com.tr/mimod/oda_genel_kurul_delegeleri.php
-https://demo.crater.com.tr/mimod/odenti_ve_belgeler.php
-https://demo.crater.com.tr/mimod/ogrenci_uyelik.php
-https://demo.crater.com.tr/mimod/plan_notlari.php
-https://demo.crater.com.tr/mimod/plan_not_detay.php
-https://demo.crater.com.tr/mimod/raporlar.php
-https://demo.crater.com.tr/mimod/sorusturma_ve_uzlastirma_kurulu.php
-https://demo.crater.com.tr/mimod/sozlesmeler.php
-https://demo.crater.com.tr/mimod/sube_yonetim_kurulu.php
-https://demo.crater.com.tr/mimod/yapi_birim_maliyetleri.php
-https://demo.crater.com.tr/mimod/yonetmelikler.php
-https://demo.crater.com.tr/mimod/ziyaretdetay.php
-https://demo.crater.com.tr/mimod/ziyaret_ve_kabuller.php
++ https://demo.crater.com.tr/mimod/index.php
++ https://demo.crater.com.tr/mimod/is_formu.php
++ https://demo.crater.com.tr/mimod/kanunlar.php
++ https://demo.crater.com.tr/mimod/kariyer_firsatlari.php
++ https://demo.crater.com.tr/mimod/kayit_kosullari.php
++ https://demo.crater.com.tr/mimod/komite_komisyon_ve_kulupler.php
++ https://demo.crater.com.tr/mimod/kurulus_ve_amac.php
++ https://demo.crater.com.tr/mimod/kutuphane.php
++ https://demo.crater.com.tr/mimod/mimaran.php
++ https://demo.crater.com.tr/mimod/oda_genel_kurul_delegeleri.php
++ https://demo.crater.com.tr/mimod/odenti_ve_belgeler.php
++ https://demo.crater.com.tr/mimod/ogrenci_uyelik.php
++ https://demo.crater.com.tr/mimod/plan_notlari.php
++ https://demo.crater.com.tr/mimod/plan_not_detay.php
++ https://demo.crater.com.tr/mimod/raporlar.php
++ https://demo.crater.com.tr/mimod/sorusturma_ve_uzlastirma_kurulu.php
++ https://demo.crater.com.tr/mimod/sozlesmeler.php
++ https://demo.crater.com.tr/mimod/sube_yonetim_kurulu.php
++ https://demo.crater.com.tr/mimod/yapi_birim_maliyetleri.php
++ https://demo.crater.com.tr/mimod/yonetmelikler.php
++ https://demo.crater.com.tr/mimod/ziyaretdetay.php
++ https://demo.crater.com.tr/mimod/ziyaret_ve_kabuller.php
