@@ -85,6 +85,13 @@ footer {
       }
     }
   }
+  @include max_responsive(lg){
+    .footer-left{
+      &::after{
+        width: calc(var(--column-width) - var(--gutter-width));
+      }
+    }
+  }
   @include max_responsive(md){
     .footer-left{
       &::after{

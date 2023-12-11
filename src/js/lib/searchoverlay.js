@@ -23,6 +23,7 @@ function openMenu() {
   closeSearchOverlayButton.addEventListener('click', closeMenu);
   window.removeEventListener('keyup', closeMenuOnEscape);
   window.addEventListener('keyup', closeMenuOnEscape);
+  document.querySelectorAll('.body, .mobileMenu, .menuButton, .mobileMenuBackdrop, html, #page-menu').forEach(e => e.classList.remove('show'));
 }
 
 function closeMenu() {

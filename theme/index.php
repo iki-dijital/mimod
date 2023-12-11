@@ -299,7 +299,7 @@ include "header.php";
     <section id="home-career" class="mb-25 md:mb-15 sm:mb-8">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 flex sm:flex-col justify-between sm:justify-center items-center mb-12.5 sm:mb-5 md:gap-x-6 sm:gap-y-5">
+                <div class="col-lg-12 flex sm:flex-col justify-between sm:justify-center items-center mb-12.5 md:mb-15 md:gap-x-6 sm:gap-y-5">
                     <div class="sm:text-center">
                         <h2 class="text-3xl md:text-xl text-secondary font-bold leading-none mt-0 mb-2">KARİYER FIRSATLARI</h2>
                         <p class="leading-snug my-0 text-secondary">Son Eklenen İlanları ve İş ilanlarını buradan takip

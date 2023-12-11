@@ -3,7 +3,7 @@
         class="absolute bottom-0 left-0 w-full h-full z-0 object-cover object-center">
     <div class="container relative z-1">
         <div class="row">
-            <div class="col-lg-4 footer-left pt-19.5 pb-16.5 bg-primary relative after-absolute before-absolute md:mb-10">
+            <div class="col-xl-4 col-lg-5 footer-left pt-19.5 pb-16.5 bg-primary relative after-absolute before-absolute md:mb-10">
                 <a href="" class="block logo mb-7">
                     <img src="<?= domain ?>assets/img/svg/logo_white.svg" alt="TMMOB Mimarlar Odası Konya Şubesi">
                 </a>
@@ -14,34 +14,34 @@
                         <div class="flex items-center justify-center w-4 h-4">
                             <?= getSprite("contact_map", "fill-secondary w-full h-full") ?>
                         </div>
-                        <address class="text-white text-sm leading-tight">Sahipata Mh. Atatürk Cd. No:15 Meram/Konya
+                        <address class="text-white text-sm xs:text-xs leading-tight">Sahipata Mh. Atatürk Cd. No:15 Meram/Konya
                         </address>
 
                     </div>
-                    <div class="flex items-center gap-x-1.5 w-5/11 xs:w-1/2 pr-9.5 xs:pr-3">
+                    <div class="flex items-center gap-x-1.5 w-5/11 lg:w-1/2  pr-9.5 xs:pr-3">
                         <div class="flex items-center justify-center w-4 aspect-square">
                             <?= getSprite("contact_phone", "fill-secondary w-full h-full") ?>
                         </div>
-                        <a href="tel:+903323534717" class="text-white text-sm leading-tight">+90 332 353 47 17</a>
+                        <a href="tel:+903323534717" class="text-white text-sm xs:text-xs leading-tight">+90 332 353 47 17</a>
 
                     </div>
-                    <div class="flex items-center gap-x-1.5 w-5/11 xs:w-1/2">
+                    <div class="flex items-center gap-x-1.5 w-5/11 lg:w-1/2">
                         <div class="flex items-center justify-center w-4 aspect-square">
                             <?= getSprite("contact_fax", "fill-secondary w-full h-full") ?>
                         </div>
-                        <p class="text-white text-sm leading-tight my-0">+90 332 353 41 61</p>
+                        <p class="text-white text-sm xs:text-xs leading-tight my-0">+90 332 353 41 61</p>
                     </div>
-                    <div class="flex items-center gap-x-1.5 w-5/11 xs:w-1/2 pr-9.5 xs:pr-3">
+                    <div class="flex items-center gap-x-1.5 w-5/11 lg:w-1/2 pr-9.5 xs:pr-3">
                         <div class="flex items-center justify-center w-4 aspect-square">
                             <?= getSprite("contact_mail", "fill-secondary w-full h-full") ?>
                         </div>
                         <a href="mailto:konya@mo.org.tr" class="text-white text-sm leading-tight">konya@mo.org.tr</a>
                     </div>
-                    <div class="flex items-center gap-x-1.5 w-5/11 xs:w-1/2">
+                    <div class="flex items-center gap-x-1.5 w-5/11 lg:w-1/2">
                         <div class="flex items-center justify-center w-4 aspect-square">
                             <?= getSprite("contact_hour", "fill-secondary w-full h-full") ?>
                         </div>
-                        <p class="text-white text-sm leading-tight my-0">Hafta için 10:00 - 17:00</p>
+                        <p class="text-white text-sm xs:text-xs leading-tight my-0">Hafta için 10:00 - 17:00</p>
                     </div>
                 </div>
                 <form action="" class="mb-15">
@@ -58,7 +58,7 @@
                             class="btn cursor-pointer border-none transition-colors transition-300 bg-secondary text-white justify-center flex-none px-6">Gönder</button>
                     </div>
                 </form>
-                <div class="social flex items-center gap-x-13">
+                <div class="social flex items-center md:justify-center gap-x-13 sm:gap-x-8">
                     <a href="" class="w-7 h-7 flex items-center jutify-center" target="_blank">
                         <?= getSprite("linkedin", "fill-secondary w-7 h-7 tranisiton-colors transition-300") ?>
                     </a>
@@ -76,7 +76,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 offset-lg-2">
+            <div class="col-lg-3 offset-xl-2 offset-lg-1">
                 <div class="navlist mb-2 md:mb-5">
                     <span class="font-bold leading-none text-dark block mb-2 md:text-center">HAKKIMIZDA</span>
                     <!-- Menüden önceki kelimeyi değiştir -->
