@@ -13,23 +13,30 @@ include "components/svg-sprite.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="TMMOB Mimarlar Odası Konya Şubesi">
     <title>TMMOB Mimarlar Odası Konya Şubesi</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<?=domain?>assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?=domain?>assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?=domain?>assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?=domain?>assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?=domain?>assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="<?=domain?>assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#5bbad5">
+    <meta name="msapplication-config" content="<?=domain?>assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#959387">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';"
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet"
-        href="<?= domain ?>assets/css/main.css<?= $_SERVER['REMOTE_ADDR'] == '::1' ? '?v='.rand() : '' ?>">
+        href="<?= domain ?>assets/css/main.css<?= $_SERVER['REMOTE_ADDR'] == '::1' ? '?v=' . rand() : '' ?>">
 </head>
 
 <body class="bg-light">
     <div id="search_overlay"
         class="absolute top-0 left-0 w-full h-2/7 z-8 bg-light flex justify-center items-center transition-400 transition-transform">
         <svg class="absolute top-5 right-5 cursor-pointer transition-300 transition-colors w-10 h-10 xs:w-7 xs:h-7"
-            xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
-            stroke-width="1.5" id="close_search" viewBox="0 0 24 24">
+            xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" id="close_search"
+            viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
         <div class="container">
@@ -242,7 +249,9 @@ include "components/svg-sprite.php";
             </div>
         </div>
     </header>
-    <div class="mobileMenuBackdrop fixed top-0 left-0 w-full h-full z-4 transition-opacity transition-300 pointer-events-none select-none opacity-0"></div>
+    <div
+        class="mobileMenuBackdrop fixed top-0 left-0 w-full h-full z-4 transition-opacity transition-300 pointer-events-none select-none opacity-0">
+    </div>
     <div class="mobileMenu hidden md:block fixed w-4/5 h-screen z-6 bg-primary pb-10">
         <div class="accordion flex flex-col gap-y-4" id="nav-mobile-1">
             <div class="accordion-item">
