@@ -5,5 +5,6 @@ export default {
     outdir: "theme/assets/js",
     splitting: true,
     chunkNames: "chunks",
+    signed: true
   };
   
